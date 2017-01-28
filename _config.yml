@@ -7,7 +7,7 @@ permalink:        none
 title:            Just a Coder
 tagline:          'Random Stuff'
 description:      'Sometimes i write to take notes, sometimes to help others. The JS Buddy'
-url:              http://hyde.getpoole.com
+url:              /
 baseurl:          /
 timezone:         Europe/Istanbul
 lsi:              true
@@ -15,7 +15,7 @@ author:
   name:           'Ahmet Huseyin Gokdayi'
   url:            https://twitter.com/ahmet_gdy
 
-paginate:         3
+paginate:         5
 
 # Custom vars
 version:          2.1.0
