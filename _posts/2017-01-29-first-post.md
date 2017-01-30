@@ -2,6 +2,7 @@
 layout: post
 title: Let Write Some Serious Stuff!
 categories: [Random]
+tags : [random]
 ---
 
 
