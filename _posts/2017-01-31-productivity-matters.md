@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Productivity Matters!
-categories: [Productivity]
-tags: [productivity,notes]
+categories: [Random]
+tags: [random,productivity,notes]
 ---
 
 ### Do yourself a favor, and track what you do.
