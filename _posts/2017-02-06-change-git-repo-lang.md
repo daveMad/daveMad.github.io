@@ -11,7 +11,11 @@ It's a library used on Github to detect repository languages. You can check it o
 
 ##  GitAttributes
 
-We'll need a **.gitattributes** file in order to change the repo language. I'm using Windows, and it does not allow me to define a new file with name starting with a **dot**. If you are having such a case, you can  just download [this sample](https://github.com/daveMad/daveMad.github.io/blob/master/.gitattributes) 
+We'll need a **.gitattributes** file in order to change the repo language. I'm using Windows, and it does not allow me to define a new file with name starting with a **dot**. If you are having such a case, you can type the following command from the command line:
+
+`echo .> .gitattributes`
+
+ or you can  just download [this sample](https://github.com/daveMad/daveMad.github.io/blob/master/.gitattributes) 
 
 ## Add a single line and it's done
 
