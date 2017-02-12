@@ -75,5 +75,79 @@ We also have live-preview feature when we use `ng serve`, so to see it in action
 - Go to *src/environments/environment.ts*
 - Change the *production* value to **true**
 
-Go back to the terminal/command prompt and you will it already starts compiling again!
+Go back to the terminal/command prompt and you will see it already starts compiling again!
 
+
+## AppModule
+
+Cd into the *app* folder, and you'll see a file named **app.module.ts**, open it. This is our root module. So, where do we define this is our root module?. In the *src* folder there is a file named **main.ts**. Open it, and at the bottom there is this bootstrapping code:
+
+```javascript
+platformBrowserDynamic().bootstrapModule(AppModule);
+```
+
+We first import the **AppModule** then bootstrap it. It is our root module. Let's go back to **AppModule**.
+
+{% highlight ts %}
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+{% endhighlight %}
+
+First we import the ES6 modules that we need to run our app. For example, we import **HttpModule** because we will make HTTP requests to our api. We also import **NgModule** because we need to add some metadata so that it can be known as an Angular Module. There are differences between ES modules and Angular Modules but we'll grasp them in time.
+
+There is a `@NgModule()` above our class. This is a decorator, we'll use them a lot later. We add metadata with this decorator. Let's examine it a little bit;
+
+- declarations array contains the **AppComponent**, but we import it first, then we declare it as our root component
+- imports array holds what we imported, they can be angular modules, our own modules, services etc.
+- providers array kinda works for the DI(Dependency Injection), let's say we have custom `DataService` and we want to use this service throughout the app, (e.g in other components of the app), so we just provide it here, it becomes **injectable** to the app, and we can use it throughout the app
+
+## AppComponent
+
+In the *src/app/* folder we have a file named **app.component.ts**, open that file. We have a class there named **AppComponent**
+
+We have a decorator above the component. There you will see 3 properties :
+
+### selector
+
+In AngularJS(Angular 1.xx) we were using `ng-app, ng-view` etc. We no longer have these directives. Angular2 has components which manages a section of an html page that we call as **Views**. Selector gives a code to use and reference this component on the html page. Let's how it is used on html side
+
+Open up your index.html. And you will see an html element like this
+
+```html
+<app-root>Loading...</app-root>
+```
+
+### templateUrl
+
+Go back to your **app.component.ts** file, you'll see the **templateUrl** property. It simply defines our html page that will be rendered on the page that we added our *selector*, which in this case is `<app-root>`.
+
+Open the *app.component.html* file, there is an `<h1>` element there. You can add anything you want, divs, sections, navs, buttons you name it. But don't add tags like `<html> and <body>` because **this is a single page application**, there is onyl one page and the others will be rendered on that page.
+
+### styleUrls
+
+We can also add our specific css files to be used on our component. This is an array property and you can add any number of css files you want
+
+
+## Conclusion
+
+We've examined our simple app, of course there are many more stuff we gotta look at, like testing, ES6, etc. But i'll write about them later. We don't have to understand every configuration about how the app works, the more we code, we'll understand them better.
