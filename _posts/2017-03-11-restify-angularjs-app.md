@@ -204,7 +204,7 @@ In angular, one of the ways to implement a service is by defining a **factory**.
 }());
 {% endhighlight %}
 
-We access to our app and we register our service. Similar to the controller definition, first parameter is the service's name ant the second is a function. It just injects the built-in **$http** service, so why do we even need this service?, you may ask. Well, for a more maintainable and modular development, just use these services and if you need to change your back-end api or the endpoints etc., you just have to change one file, your service. Instead of writing the same code on every controller, having a service helps a lot.
+We access to our app and  register our service. Similar to the controller definition, first parameter is the service's name ant the second is a function. It just injects the built-in **$http** service, so why do we even need this service?, you may ask. Well, for a more maintainable and modular development, just use these services and if you need to change your back-end api or the endpoints etc., you just have to change one file, your service. Instead of writing the same code on every controller, having a service helps a lot.
 
 It has 2 functions, both of which returns a promise coming from our HTTP requests. I'm returning promise here because it makes it flexible. For example, sometimes you may just want to get a value and sometimes you just want something else, by returning a promise, you can do whatever you want with that data in your controller.
 
