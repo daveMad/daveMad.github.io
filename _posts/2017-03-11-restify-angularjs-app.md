@@ -234,7 +234,7 @@ You should see the log on the console that the app's working.
 Now we can just open `index.html` and see it in action!
 
 Full Source Code :
-https://github.com/daveMad/Interview-Sample-App
+<a target='_blank' href='https://github.com/daveMad/Interview-Sample-App'>https://github.com/daveMad/Interview-Sample-App</a>
 
 Thank you for reading, i know this was a long post but it just happened, keep coding!
 
