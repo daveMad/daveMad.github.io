@@ -85,7 +85,7 @@ Lets declare an angularjs  basic app:
 var app = angular.module('app', ['ngRoute']);
 {% endhighlight %}
 
-We declare our app, and add **ngRoute** as our dependancy to enable routing/navigation in our app. This a seperate module from the core AngularJs. You can view the docs [here](https://docs.angularjs.org/api/ngRoute)
+We declare our app, and add **ngRoute** as our dependency to enable routing/navigation in our app. This a seperate module from the core AngularJs. You can view the docs [here](https://docs.angularjs.org/api/ngRoute)
 
 If you are declaring a brand new app, you have to include the second parameter, i mean the array one. If we did not need to use ngRoute then we'd define our app like this:
 
