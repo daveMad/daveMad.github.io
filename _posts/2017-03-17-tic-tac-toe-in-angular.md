@@ -3,6 +3,7 @@ layout: post
 title: Tic Tac Toe Game in Angular
 categories: [Angular]
 tags : [angular]
+comments : true
 ---
 
 > This is a simple Tic Tac Toe game written in Angular 2. You can find the source code [here](https://github.com/daveMad/TicTacToe-Angular2)
