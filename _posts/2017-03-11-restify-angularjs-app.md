@@ -3,6 +3,7 @@ layout: post
 title: Simple Restify & AngularJs App
 categories: [AngularJS,Restify]
 tags : [angularjs,restify]
+comments : true
 ---
 
 > For a job application, i was asked to build an SPA app, i wanted to use AngularJS for it's simplicity, and also wanted to include RestifyJs
