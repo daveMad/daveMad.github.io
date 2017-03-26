@@ -78,10 +78,10 @@ In my previous post i talked about the scoping in a `setTimeout()` function, tha
 
 {% highlight javascript %}
 function foo() {
-    for (var index = 0; index < 10; index++) {
+     for (let index = 0; index < 10; index++) {
         setTimeout(() => {
-            console.log(this.a);
             this.a += index;
+            console.log(this.a);
         }, 100)
     }
 }
@@ -93,7 +93,7 @@ var obj = {
 foo.call(obj); // 2, 12, 22, 32 etc..
 {% endhighlight %}
 
-Because the arrow-function defines it's own lexical scope, the usage of `this` is achieved. Also, normally the variable `index` value would be stuck at **10**. And like i said, **arrow-function's** own lexical scope solves this problem, too.
+Because the arrow-function defines it's own lexical scope, the usage of `this` is achieved. Also, normally the variable `index` value would be stuck at **10**. With using `let` keyword,we solve this problem, too.
 
 # To Sum Up
 
