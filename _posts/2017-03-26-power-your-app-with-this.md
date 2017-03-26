@@ -90,7 +90,7 @@ var obj = {
     a: 2
 };
 
-foo.call(obj); // 2, 12, 22, 32 etc..
+foo.call(obj); // 2, 3, 5, 8 etc.
 {% endhighlight %}
 
 Because the arrow-function defines it's own lexical scope, the usage of `this` is achieved. Also, normally the variable `index` value would be stuck at **10**. With using `let` keyword,we solve this problem, too.
