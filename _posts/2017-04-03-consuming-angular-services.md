@@ -6,7 +6,7 @@ tags : [angular,notes]
 comments : true
 ---
 
-In my previous post, i talked about simple [Angular Services](ly). Now we'll provide these services throughout our app and we'll use their functions in a component.
+In my previous post, i talked about simple [Angular Services](https://angular.io/docs/ts/latest/tutorial/toh-pt4.html). Now we'll provide these services throughout our app and we'll use their functions in a component.
 
 Let's say we have this service named as `sample.service.ts`:
 
@@ -65,7 +65,7 @@ import {AppComponent} from './app.component';
 export class AppModule { }
 ```
 
-So what happened here? Well, this is our **app.module.ts** file, we declared a simple module, actually this is the root module. Did you recognize the `@NgModule` decorator below our class? That is the annotation that makes our class an [Angular Module](ly). In that annotation, there is this `providers: [SampleService]` array. You can add as many as services you want with a comma. 
+So what happened here? Well, this is our **app.module.ts** file, we declared a simple module, actually this is the root module. Did you recognize the `@NgModule` decorator below our class? That is the annotation that makes our class an [Angular Module](https://angular.io/docs/ts/latest/guide/ngmodule.html). In that annotation, there is this `providers: [SampleService]` array. You can add as many as services you want with a comma. 
 
 By adding this `providers` array, we tell our app to make this service (in this case it's `SampleService`)  available through our app. So later we import this service from a component or another service, it'll be injected automatically.
 
