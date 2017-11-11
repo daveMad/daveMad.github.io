@@ -7,8 +7,8 @@ permalink:        none
 title:            Just a Coder
 tagline:          'Random Stuff'
 description:      'Sometimes i write to take notes, sometimes to help others.'
-url:              /
-baseurl:          https://davemad.github.io
+url:              https://davemad.github.io/
+baseurl:          https://davemad.github.io/
 timezone:         Europe/Istanbul
 lsi:              true
 author:
