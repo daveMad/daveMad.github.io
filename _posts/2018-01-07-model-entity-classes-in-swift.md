@@ -12,13 +12,13 @@ We must admit that most of use MVC pattern when it comes to business kinda apps 
 
 I generally store my entity classes in a different folder like, *Model* or *Entities*. Right click in your project navigator, select New File and name your class press Return:
 
-```Swift
+```swift
 import Foundation
 ```
 
 You will get this empty swift file, we shall define our class ourselves : 
 
-```Swift
+```swift
 ...
 
 class BaseEntity {
@@ -35,7 +35,7 @@ As you can see there is not much difference to other languages, similar like C# 
 
 Who does not need properties? Let's add some :
 
-```Swift
+```swift
 
 .... 
 
@@ -55,7 +55,7 @@ Yep, we defined 2 variables, which've become the class properties now, and we ad
 
 Well that is possible, too. You just need to make your variables **nullable** (aka: nil) :
 
-```Swift
+```swift
 ...
 var id : Int?
 var name : String?
