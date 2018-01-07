@@ -515,7 +515,7 @@ a.pagination-item:hover {
 
 .post-tag {
   margin-top: 1em;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   border-radius: 10%;
   padding: .5em;
 }
