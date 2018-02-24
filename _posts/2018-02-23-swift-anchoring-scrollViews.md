@@ -45,13 +45,12 @@ scrollView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor).isActi
 scrollView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
 ```
 
-We are done with our scrollView, now we need to a few elements to it.
+We are done with our scrollView, now we need to add a few elements to it.
 
 ### Add random UIView elements
 
 ```swift
 
-var counter : CGFloat = 0
 var fixedHeightOfLabel : CGFloat = 30
 
 for index in 0...18 {
@@ -61,7 +60,7 @@ for index in 0...18 {
 
     scrollView.addSubview(label)
 
-    label.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: counter * fixedHeightOfLabel).isActive = true // we calculate the distance from the top of scrollView, ourselves
+    label.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: CGFloat(index) * fixedHeightOfLabel).isActive = true // we calculate the distance from the top of scrollView, ourselves
 
     label.leadingAnchor.constraint(equalTo: containerView.leadingAnchor).isActive = true
     label.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
