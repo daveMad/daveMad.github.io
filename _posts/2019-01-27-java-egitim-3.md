@@ -18,7 +18,7 @@ Uzun bir aradan sonra, tekrar merhaba. Daha önceki çalışmalarımızda geneld
  	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String[] array = new String[];
+		String[] array = new String[3];
 
         array[0] = "A";
 		array[1] = "B";
